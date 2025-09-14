@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #D2B48C, #F5F5DC, #FFFFFF);
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 250px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            position: fixed;
+            height: 100%;
+            left: 0;
+            top: 0;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 0 10px 10px 0;
+        }
+        .sidebar a {
+            display: block;
+            color: #34495e;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 40px 0;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            color: #f39c12;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            width: calc(100% - 270px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .about-section {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+        .about-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .about-card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .about-card p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .rating {
+            background: #FFD700;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="profile.html" onclick="showSection('about-section')">Profile</a>
+        <a href="profile.html" onclick="showSection('upload-section')">Upload Product</a>
+        <a href="profile.html" onclick="showSection('prediction-section')">Prediction</a>
+        <a href="#" onclick="showSection('about-section')">About</a>
+        <a href="profit.html">Profit</a>
+    </div>
+
+    <div class="main-content">
+    <div class="content" id="about-section">
+        <div class="about-section">
+            <div class="about-card">
+                <div>
+                    <h3>Gayatri Artwork Shop</h3>
+                    <p>Handmade with unique artistic designs</p>
+                </div>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="about-card">
+                <div>
+                    <h3>Rashmi Artwork Shop</h3>
+                    <p>drawings which add colors in life</p>
+                </div>
+                <div class="rating">★★★★☆</div>
+            </div>
+            <div class="about-card">
+                <div>
+                    <h3>Divya Artwork Shop</h3>
+                    <p>Exclusive artistic works</p>
+                </div>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="about-card">
+                <div>
+                    <h3>Yash Artwork</h3>
+                    <p>realistic paintings and creative artwork</p>
+                </div>
+                <div class="rating">★★★★☆</div>
+            </div>
+            <div class="about-card">
+                <div>
+                    <h3>Ananya Artwork Shop</h3>
+                    <p>Beautifully handmade Art</p>
+                </div>
+                <div class="rating">★★★★☆</div>
+            </div>
+            <div class="about-card">
+                <div>
+                    <h3>Aakash Artwork Shop</h3>
+                    <p>Creative and artistic paintings</p>
+                </div>
+                <div class="rating">★★★★☆</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.content').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
