@@ -69,25 +69,25 @@ SmartArt-Marketplace/
 ## 📸 Screenshots
 
 * **SmartArt\_1**
-  ![SmartArt\_1](assets/SmartArt_1.png)
+  ![SmartArt\_1.png](SmartArt_1.png)
 
 * **SmartArt\_2**
-  ![SmartArt\_2](assets/SmartArt_2.png)
+  ![SmartArt\_2.png](SmartArt_2.png)
 
 * **SmartArt\_3**
-  ![SmartArt\_3](assets/SmartArt_3.png)
+  ![SmartArt\_3.png](SmartArt_3.png)
 
 * **SmartArt\_4**
-  ![SmartArt\_4](assets/SmartArt_4.png)
+  ![SmartArt\_4.png](SmartArt_4.png)
 
 * **SmartArt\_5**
-  ![SmartArt\_5](assets/SmartArt_5.png)
+  ![SmartArt\_5.png](SmartArt_5.png)
 
 * **SmartArt\_6**
-  ![SmartArt\_6](assets/SmartArt_6.png)
+  ![SmartArt\_6.png](SmartArt_6.png)
 
 * **SmartArt\_7**
-  ![SmartArt\_7](assets/SmartArt_7.png)
+  ![SmartArt\_7.png](SmartArt_7.png)
 
 ---
 
